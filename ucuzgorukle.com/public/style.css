@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+
+
+:root{
+    --header-height: 3rem;
+    --header-fontfamily : 'Architects Daughter', cursive;
+
+    --normal-font-size: .938rem;
+}
+
+/* Base */
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: var(--header-height) 0 0 0 ;
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    padding: 0 1rem;
+    background: rgb(255,255,252);
+    background: linear-gradient(312deg, rgba(255,255,252,1) 15%, rgba(255,195,0,1) 52%);;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+
+}
+
+
+
+
+.header_logo{
+    position: relative;
+    left: 1rem;
+    letter-spacing: .11rem;
+    color: rgb(251, 253, 243);
+    font-weight: 700 ;
+    text-decoration: none;
+    font-family: var(--header-fontfamily);
+}
+
+.header_toggle{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+#carouselExampleCaptions{
+    margin:.5rem 0 ;
+    top: 4rem;
+    z-index: 0;
+}
+
+.header_slide{
+    font-weight: 600;
+    text-align: center;
+    margin: .5rem 6rem;
+    padding: .5rem 2rem;
+    font-size: 1.3rem;
+    font-style: italic;
+    letter-spacing: .1rem;
+    color: rgb(91, 90, 62);
+    
+}
+
+/** NAV **/
+
+@media screen and (max-width: 768px) {
+    .nav{
+        position: fixed;
+        top: 0;
+        left: -100%;              
+        background: rgba(255,195,0,1);
+        background: linear-gradient(312deg, rgba(255,195,0,1) 0%, rgba(248,248,148,1) 13%, rgba(255,255,252,1) 32%);
+        width: 80%;
+        height: 100vh;
+        padding: 2rem 0;
+        z-index: var(--z-fixed);
+        transition: .5s;
+        overflow-y: auto;
+    }
+}
+
+
+
+.nav_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_item{
+    margin-bottom: 2rem;
+}
+
+.show_menu{
+    left:0;
+    }
+.action{
+    font-style: bold;
+}
+    
+
+/*  Market Product */
+.container{
+    margin: 6rem 0;
+}
+
+
+.offprice{
+    text-decoration: line-through rgba(207, 0, 15, 0.7);
+}
+
+.onprice {
+    color: goldenrod;
+    font-weight:600;
+}
+
+.onur{
+    color: green;
+    margin: .5rem 0;
+}
+
+.a101{
+    color: white; 
+    background-color: rgb(13, 145, 145);
+    display: inline-block;
+    padding: 0 .5rem 0 .2rem;
+    margin: .5rem 0;
+}
+
+.bim{
+    color: #fff;
+    background-color: #ff0f0f;
+    border-radius: .5rem;
+    display: inline-block;
+    padding: .5rem;
+    letter-spacing: .1rem;
+    content: "BİM";
+}
+
+.bim-logo{
+    background-color: #ff0f0f;
+    color: white;
+    border-radius: .5rem;
+    letter-spacing: .2rem;
+    font-size: 10vw;
+    text-align: center;
+    content: "BİM";
+}
+
+
+
+
+.seyhanlar{
+    color: #fff;
+    background-color: #FF1111;
+    display: inline-block;
+    padding: .5rem;
+    border-bottom-right-radius:.5rem;
+    
+}
+
+.migros{
+    color: #FE8300;
+    font-weight: 750;
+    padding: .5rem 0;
+}
+
+.carrefour{
+    color: blue;
+}
+
+.furpa{
+    font-weight: 700;
+    color: blue;
+    background-color:#F6FE00 ;
+    border-radius: .1rem ;
+    display: inline-block;
+    padding: .5rem;
+    letter-spacing: .1rem;
+}
+
+
+
+
+.active{
+    color: #ff0f0f;
+}
+
+a:link{
+    text-decoration: none;
+}
+
